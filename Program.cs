@@ -1,4 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
+//Top level statements
+
+using Asha.Data;
 using dotnet_core_pi3bplus.Services;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -29,4 +32,16 @@ static void Entry(IServiceProvider serviceProvider)
 
     Customer anotherCust = serviceProvider.GetRequiredService<Customer>();
     anotherCust.IsDriving();
+
+    TestDb();
+}
+
+
+static void TestDb()
+{
+    using (var db = new AshaContext())
+    {
+        db.Database.EnsureCreated();
+        db.SaveChanges();
+    }
 }

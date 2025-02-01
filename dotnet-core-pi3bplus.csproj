@@ -12,4 +12,9 @@
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Asha.Data\Asha.Data.csproj" />
+    <ProjectReference Include="..\Asha.Domain\Asha.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
