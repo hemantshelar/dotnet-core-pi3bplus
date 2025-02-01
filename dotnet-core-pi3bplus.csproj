@@ -6,6 +6,7 @@
     <RootNamespace>dotnet_core_pi3bplus</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <UserSecretsId>0bc0e44e-554f-4aef-bea0-1c6ee1f726a5</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
